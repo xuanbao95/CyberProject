@@ -1,0 +1,33 @@
+@import "./base/reset";
+
+@import "./helper/variable";
+@import "./helper/mixin";
+@import "./helper/function";
+@import "./components/Loading";
+
+@import "./components/menu";
+@import "./components/carousel";
+@import "./components/search";
+@import "./components/TableMoiveHome";
+@import "./components/calendar";
+@import "./components/calendarMovie";
+@import "./components/filter";
+@import "./components/ticketBooking";
+@import "./components/DetailMovie";
+@import "./components//Cinema";
+@import "./components/blockApp";
+@import "./components/footer";
+@import "./components/BackToTop";
+@import "./components/Admin";
+@import "./components/DashBoard";
+@import "./components/Navbar";
+@import "./components/InfoUser";
+@import "./components/ModalSearch";
+@import "./components/Home";
+@import "./components/carousel2";
+@import "./components/section_1";
+@import "./components/section_2";
+@import "./components/section_3";
+@import "./header/header";
+@import "./userInfo/userInfo.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";

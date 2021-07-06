@@ -1,0 +1,85 @@
+.search_bar {
+  margin-left: 227px;
+  position: absolute;
+  z-index: 2;
+  max-width: 1300px;
+  height: 85px;
+  left: 7%;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  bottom: -8%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  top: 39rem;
+
+  .MuiButton-contained {
+    color: white;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    width: 200px;
+    background-color: black;
+    &:hover {
+      background-color: rgba(227, 169, 43, 0.984);
+      color: black;
+    }
+  }
+  .MuiButtonBase-root {
+    width: 2rem;
+  }
+  .MuiFormControl-fullWidth {
+    width: 160px;
+    margin: 15px 20px;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    font-size: 22px;
+  }
+  .input {
+    width: 200px;
+  }
+}
+.buyTicket {
+  width: 148px !important;
+  top: 1.2rem;
+  margin-right: 19px !important;
+}
+@media (min-width: 1441px) and (max-width: 1690px) {
+  .search_bar {
+    margin-left: 40px;
+    height: 80px;
+    .buyTicket {
+      padding: 6px 10px;
+      font-size: 11px;
+    }
+  }
+}
+//13inch
+@media screen and (max-width: 1440px) {
+  .search_bar {
+    margin-left: 40px;
+    height: 80px;
+    .buyTicket {
+      padding: 6px 10px;
+      font-size: 11px;
+    }
+  }
+}
+//Ipad pro
+@media screen and (max-width: 1024px) {
+  .carousel {
+    .search_bar {
+      display: none;
+    }
+  }
+}
+//Ip X
+@media screen and (max-width: 375px) {
+  .carousel {
+    .search_bar {
+      display: none;
+    }
+  }
+}

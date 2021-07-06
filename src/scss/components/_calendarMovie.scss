@@ -1,0 +1,149 @@
+
+.calendar__film {
+  margin-bottom: spacing(2.5);
+  cursor: pointer;
+  &:hover .calendar__picture .calendar__filmThumbnail .calendar__overlay {
+    opacity: 1;
+  }
+  .calendar__picture {
+    .calendar__filmThumbnail {
+      padding-bottom: 305px;
+      margin: 0 6px;
+      border-radius: 7px;
+      .calendar__overlay {
+        .image{
+          position: relative;
+        }
+        .play{
+          position: absolute;
+          top: 140px;
+          left: 70px;
+        }
+        
+        position: absolute;
+        top: 0;
+        background: linear-gradient(to top, #000, transparent 100%);
+        border-radius: $border-radius-4;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.2s;
+      }
+      .playTrailer1 {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 50%;
+        left: 39%;
+        transform: translate(-50%, -50%);
+        width: spacing(5);
+        height: spacing(5);
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .calendar__ageType {
+        margin-top: 5px;
+        margin-left: 6px;
+        background-color: orange;
+        font-size: $fs-4;
+        color: black;
+        font-weight: $fw-bold;
+        padding: 4px 6px;
+        border-radius: $border-radius-4;
+        text-align: center;
+        position: absolute;
+      }
+      .calendar__avgPoint {
+        font-family: "SF Regular", sans-serif;
+        bottom: spacing(1.2);
+        top: auto;
+        padding: spacing(0.6) 0;
+        .calendar__point {
+          font-size: $fs-0;
+        }
+      }
+      .calendar__avgPoint {
+        margin-top: 5px;
+        margin-left: 163px;
+        font-family: "SF Medium", sans-serif;
+        font-weight: $fw-bold;
+        background-color: rgba(12, 27, 54, 0.8);
+        border: 1px solid $color-black-1;
+        border-radius: $border-radius-4;
+        line-height: 1;
+        display: inline-block;
+        padding: spacing(0.2);
+        width: spacing(5.4);
+
+        top: spacing(1.2);
+        right: spacing(1.2);
+        .calendar__point {
+          font-size: $fs-5;
+          text-align: center;
+          color: $color-white-0;
+          margin: 0;
+        }
+        .calendar__star {
+          display: flex;
+          color: $color1
+        }
+      }
+    }
+  }
+  .calendar__text {
+    margin: 10px 6px;
+    border-radius: 7px;
+    position: relative;
+    .calendar__nameFilm {
+      text-align: center;
+      font-family: "SF Medium", sans-serif;
+      font-size: $fs-0;
+      font-weight: $fw-bold;
+      line-height: 22px;
+      margin: 0;
+      height: spacing(4.2);
+      max-height: spacing(4.2);
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .btn {
+      top:0;
+      height:100%;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      border-radius: 5px;
+      margin-left: 0;
+      font-size: 20px;
+      background-color: #fb4226;
+      outline: none;
+      border: none;
+    }
+  }
+  .calender_hover {
+    opacity: 0;
+  }
+  &:hover .calender_hover {
+    opacity: 1;
+    transition: 0.2s;
+  }
+}
+@media screen and (max-width: 375px){
+  .calendar__film .calendar__picture {
+    .calendar__filmThumbnail {
+      .calendar__avgPoint {
+        margin-left: 280px
+      }
+    }
+  }
+  
+
+}
+
+

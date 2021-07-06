@@ -1,0 +1,37 @@
+.left {
+  .left__content {
+    .left__bg {
+      background-image: url(../../../images/img/blockApp/backapp.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: calc(100% - 80px);
+      position: fixed;
+      top: spacing(8);
+      left: -22%;
+      float: left;
+      width: 26%;
+      .left__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+//Ip X
+@media (min-width: 375px) and (max-width: 812px) {
+  .left {
+    display: none;
+  }
+}
+//Ipad Pro
+@media (max-width: 1024px) {
+  .left {
+    display: none;
+  }
+}

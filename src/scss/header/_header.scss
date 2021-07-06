@@ -1,0 +1,73 @@
+#myHeader {
+  top: -14px;
+  a {
+    color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .container {
+    width: 50%;
+  }
+  .navbar {
+    padding: 0 1rem !important;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.3);
+  }
+  .left {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    a {
+      transition: 0.5s;
+      &:hover {
+        color: red !important;
+      }
+    }
+  }
+  .right {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background-color: #f8f9fa !important;
+    box-shadow: none !important;
+    .location {
+      margin-top: 17px;
+    }
+    .account {
+      img {
+        height: auto;
+        width: 30px;
+        border-radius: 25px;
+        margin-right: 5px;
+      }
+      a {
+        text-decoration: none;
+        margin-top: 7px;
+      }
+      .dropdown-menu {
+        // top: 240px;
+        z-index: 100000;
+      }
+    }
+  }
+
+  .modal-content {
+    // background-image: linear-gradient( to bottom, rgba(20, 50, 93, 0.9), rgba(8, 22, 48, 0.9) );
+    width: 80% !important;
+    margin-left: 10%;
+  }
+  .btn-dangnhap {
+    background-color: #fb4226 !important;
+    color: white !important;
+    font-weight: bold !important;
+    &:hover {
+      background-color: #e4362b !important;
+    }
+  }
+}
